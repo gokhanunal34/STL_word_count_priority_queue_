@@ -1,0 +1,11 @@
+Time complexity analysis:
+Storing the characters / words / numbers in your chosen containers, and setting their tracking values: This takes O(N) time, because it is handled in a while loop.
+In the while loop, AddItem from priority queue(which is technically a queue, not an stl priority queue)
+doesn't use any loop, it uses a push, which is O(1) for a queue, which doesn't affect the overall time complexity. 
+Thus, time complexity for this is O(N). Also, the for loop that I use for numbers in my major
+while loop won't affect my O(N) time complexity because the for loop doesn't run N times for each N times the while loop runs. 
+
+Looking up the final tracking info on your character / word / number frequencies: Peek in a queue is constant time O(1). Printing the top ten for words, chars and 
+numbers also take constant time because it is a finite and established number of times we loop over the queues, which is 10 times in worst case scenario, thus constant time.
+
+I also timed the largest test which was test3, and it took about a second to complete all tasks. I left the clocking in there for your reference. 
